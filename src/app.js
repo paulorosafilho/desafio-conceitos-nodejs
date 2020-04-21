@@ -17,7 +17,7 @@ app.get("/repositories", (request, response) => {
 app.post("/repositories", (request, response) => {
   
   const { title, techs} = request.body;
-  const url = "https://github.com/Rocketseat/umbriel"; //Usando esse 
+  const url = "https://github.com/Rocketseat/umbriel"; //Usando esse template para validação dos testes da rocketseat
   
   //meu reposítório: https://github.com/paulorosafilho/desafio-conceitos-nodejs
 
