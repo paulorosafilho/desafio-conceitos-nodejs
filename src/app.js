@@ -16,9 +16,11 @@ app.get("/repositories", (request, response) => {
 
 app.post("/repositories", (request, response) => {
   
-  console.log(request.body)
-  const { title, url, techs} = request.body;
+  const { title, techs} = request.body;
+  const url = "https://github.com/Rocketseat/umbriel"; //Usando esse 
   
+  //meu reposítório: https://github.com/paulorosafilho/desafio-conceitos-nodejs
+
   const  repository = { id: uuid(), title, url, techs , likes:0 }
 
   repositories.push(repository);
